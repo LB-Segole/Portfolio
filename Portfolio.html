@@ -4,150 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interests & Black Hole Visualization</title>
-  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div class="loading-screen" id="loading-screen">
-  <div class="loading-content">
-    <div class="loading-spinner"></div>
-    <div class="loading-text">ENTERING UNIVERSE</div>
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">ENTERING UNIVERSE</div>
+    </div>
   </div>
-</div>
 
-<canvas id="blackhole"></canvas>
+  <canvas id="blackhole"></canvas>
 
-<!-- Decorative orbits -->
-<div class="orbit" style="width: 300px; height: 300px; top: 10%; left: 5%;">
-  <div class="planet" style="top: 0; left: 50%;"></div>
-</div>
-<div class="orbit" style="width: 200px; height: 200px; bottom: 20%; right: 10%;">
-  <div class="planet" style="bottom: 0; right: 50%;"></div>
-</div>
+  <!-- Decorative orbits -->
+  <div class="orbit" style="width: 300px; height: 300px; top: 10%; left: 5%;">
+    <div class="planet" style="top: 0; left: 50%;"></div>
+  </div>
+  <div class="orbit" style="width: 200px; height: 200px; bottom: 20%; right: 10%;">
+    <div class="planet" style="bottom: 0; right: 50%;"></div>
+  </div>
 
-<!-- Hamburger Menu Button -->
-<div class="toggle-btn">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+  <!-- Hamburger Menu Button -->
+  <div class="toggle-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-<!-- Overlay for closing sidebar -->
-<div class="overlay"></div>
+  <!-- Overlay for closing sidebar -->
+  <div class="overlay"></div>
 
-<!-- Sidebar Navigation -->
-<nav class="sidebar">
-  <ul>
-    <li><a data-target="aboutme" class="nav-link active">About Me</a></li>
-    <li><a data-target="education" class="nav-link">Education</a></li>
-    <li><a data-target="interests" class="nav-link">Interests</a></li>
-    <li><a data-target="projects" class="nav-link">Projects</a></li>
-    <li><a data-target="skills" class="nav-link">Skills</a></li>
-    <li><a data-target="contact-form" class="nav-link">Contact Form</a></li>
-  </ul>
-</nav>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <ul>
+      <li><a data-target="aboutme" class="nav-link active">About Me</a></li>
+      <li><a data-target="education" class="nav-link">Education</a></li>
+      <li><a data-target="interests" class="nav-link">Interests</a></li>
+      <li><a data-target="projects" class="nav-link">Projects</a></li>
+      <li><a data-target="skills" class="nav-link">Skills</a></li>
+      <li><a data-target="contact-form" class="nav-link">Contact Form</a></li>
+    </ul>
+  </nav>
 
-<!-- Main Content Area -->
-<div class="content">
-
-  <!-- About Me Section -->
-  <section id="aboutme" class="active">
-    <div class="container">
-      <h1>About Me</h1>
-
-      <div class="avatar-container">
-        <div class="avatar-placeholder">SGL</div>
+  <!-- Main Content Area -->
+  <div class="content">
+    <!-- About Me Section -->
+    <section id="aboutme" class="active">
+      <div class="container">
+        <h1>About Me</h1>
+        <div class="avatar-container">
+          <div class="avatar-placeholder">SGL</div>
+        </div>
+        <p>Hello there! I'm the human behind SGL Developments — a curious builder, aspiring engineer, AI dreamer, and someone who's definitely Googled "how to make Jarvis in real life" more than once.</p>
+        <p>I'm currently on a mission to master mechanical and aerospace engineering, nanotechnology, material science, international relations, and just for fun — the fundamentals of what makes this universe click (maths & physics). Why choose one path when you can carve your own?</p>
+        <p>By day, I'm learning Python, web dev, and forex trading fundamentals. By night, I'm building ambitious AI projects (like a virtual pet that reads your vibe and nags you to sleep) while plotting the future of my company, SGL Developments. Oh, and I sometimes code on my phone — because who needs a laptop when you've got grit and 4GB of free space?</p>
+        <p>My long-term goal? Build LiveAI — a conscious, helpful, always-on AI that listens, learns, and evolves with its user (kind of like a sci-fi assistant, but real). Until then, I'm shipping, studying, failing forward, and building things that matter — one line of code at a time.</p>
+        <p>If you're into innovation, intentional growth, and AI with personality, stick around. Things are just getting started.</p>
       </div>
+    </section>
 
-      <p>Hello there! I'm the human behind SGL Developments — a curious builder, aspiring engineer, AI dreamer, and someone who's definitely Googled "how to make Jarvis in real life" more than once.</p>
-
-      <p>I'm currently on a mission to master mechanical and aerospace engineering, nanotechnology, material science, and just for fun — the fundamentals of what makes this universe click (maths & physics). Why choose one path when you can carve your own?</p>
-
-      <p>By day, I'm learning web dev and AI. By night, I'm building ambitious AI projects (like a virtual pet that reads your vibe and nags you to sleep) while plotting the future of my company, SGL Developments. Oh, and I sometimes code on my phone — because who needs a laptop when you've got grit and 4GB of free space?</p>
-
-      <p>My long-term goal? Build LiveAI — a conscious, helpful, always-on AI that listens, learns, and evolves with its user (kind of like a sci-fi assistant, but real). Until then, I'm shipping, studying, failing forward, and building things that matter — one line of code at a time.</p>
-
-      <p>If you're into innovation, growth, and AI with personality, stick around. Things are just getting started.</p>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2>My Education</h2>
-      <div class="education-container" id="education-container">
-        <!-- Education will be dynamically added here -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Interests Section -->
-  <section id="interests">
-    <div class="container">
-      <h2>My Interests</h2>
-      <div class="interests-container" id="interests-container"></div>
-
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <h3 id="modal-title"></h3>
-          <p id="modal-text"></p>
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>My Education</h2>
+        <div class="education-container" id="education-container">
+          <!-- Education will be dynamically added here -->
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="projects-container" id="projects-container">
-        <!-- Projects will be dynamically added here -->
+    <!-- Interests Section -->
+    <section id="interests">
+      <div class="container">
+        <h2>My Interests</h2>
+        <div class="interests-container" id="interests-container"></div>
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-text"></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-container" id="skills-container">
-        <!-- Skills will be dynamically added here -->
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-container" id="projects-container">
+          <!-- Projects will be dynamically added here -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--Contact Form Section-->
-  <section id="contact-form">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <div class="form-container">
-        <form id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <input type="text" id="subject" name="subject" placeholder="Subject">
-          </div>
-          <div class="form-group">
-            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-container" id="skills-container">
+          <!-- Skills will be dynamically added here -->
+        </div>
       </div>
-    </div>
-  </section>
-</div>
+    </section>
 
-<!-- Contact Section (Bottom Panel)-->
-<footer id="contact" class="contact-panel">
-  <p>Email: <a href="mailto:segolelesego17@gmail.com"> segolelesego17@gmail.com</a></p>
-  <p>Contact: <a href="tel:+27 67 217 8088"> +27 67 217 8088</a></p>
-  <p>Github: <a href="https://github.com/LB-Segole" target="_blank"> LB-Segole</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/lesego-blessing-segole-6b3109204/" target="_blank">Lesego Blessing Segole</a> </p>
-</footer>
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="form-container">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
 
+  <!-- Contact Section (Bottom Panel) -->
+  <footer id="contact" class="contact-panel">
+    <p>Email: <a href="mailto:segolelesego17@gmail.com">segolelesego17@gmail.com</a></p>
+    <p>Contact: <a href="tel:+27672178088">+27 67 217 8088</a></p>
+    <p>Github: <a href="https://github.com/LB-Segole" target="_blank">LB-Segole</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/lesego-blessing-segole-6b3109204/" target="_blank">Lesego Blessing Segole</a></p>
+  </footer>
 </body>
 </html>
