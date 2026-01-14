@@ -1,4 +1,4 @@
-// Create starry background
+// Starry background
 function createStars() {
   try {
     const stars = 200;
@@ -17,7 +17,7 @@ function createStars() {
   }
 }
 
-// Create floating particles
+// Floating particles
 function createParticles() {
   try {
     for (let i = 0; i < 20; i++) {
@@ -67,10 +67,10 @@ const interests = [
   { image: "https://teachyourkidscode.com/wp-content/uploads/2022/02/best-coding-language-for-games.jpg", title: "Coding", description: "I love coding and creating innovative projects that solve real-world problems. From web development to AI algorithms, I'm constantly expanding my programming skills to bring my ideas to life." },
   { image: "https://i.pinimg.com/736x/10/11/9c/10119c6665803890cffe51325ae73728.jpg", title: "Aerospace", description: "Exploring the wonders of space and engineering futuristic technologies. I'm fascinated by spacecraft design, propulsion systems, and the possibility of making interplanetary travel more accessible." },
   { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAqxg6mEprmqqeV9Xhf1zZtZjQQpwHYKPcHQ&s", title: "Nanotechnology", description: "Studying and working with materials at the nanoscale to revolutionize science and engineering. The ability to manipulate matter at atomic levels opens up incredible possibilities for medicine, energy, and computing." },
-  { image: "https://media.istockphoto.com/id/966248982/photo/robot-with-education-hud.jpg?s=612x612&w=0&k=20&c=9eoZYRXNZsuU3edU87PksxN4Us-c9rB6IR7U_IGZ-U8=", title: "AI & Machine Learning", description: "Building intelligent systems that learn and adapt, pushing the boundaries of AI research. I'm particularly interested in creating AI that can understand and respond to human emotions and needs." },
-  { image: "https://i.pinimg.com/originals/00/e5/74/00e5749247f68290c03effa5c2888213.jpg", title: "Forex Trading", description: "Analyzing market trends and making strategic trades to maximize returns. I approach trading methodically, using data analysis and algorithmic strategies to identify opportunities." },
+  { image: "https://media.istockphoto.com/id/966248982/photo/robot-with-education-hud.jpg?s=612x612&w=0&k=20&c=9eoZYRXNZsuU3edU87PksxN4Us-c9rB6IR7U_IGZ-U8=", title: "AI & Machine Learning", description: "Building intelligent systems that learn and adapt, pushing the boundaries of AI research. I'm particularly interested in creating AI that can learn, understand and evolve." },
+  { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs2fphsHk4KSgHqAETKBZdjCKb1rHwDkW4nw&s", title: "Climate Tech", description: "Developing and exploring technologies that reduce emissions, capture carbon, and make energy systems more sustainable. I’m interested in climate solutions that combine engineering, materials science, and data-driven approaches to tackle environmental challenges at a systems level." },
+  { image: "https://i.pinimg.com/originals/00/e5/74/00e5749247f68290c03effa5c2888213.jpg", title: "Quantitative Trading", description: "Analyzing market trends and making strategic trades to maximize returns. I approach trading methodically, using data analysis and algorithmic strategies to identify opportunities." },
   { image: "https://wallpapers.com/images/featured/mathematics-snya5mv2dogewetc.jpg", title: "Maths & Physics", description: "Diving deep into complex calculations that seek to explain how everything works. From quantum mechanics to astrophysics, understanding these fundamental principles helps me approach engineering problems more effectively." },
-  { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs2fphsHk4KSgHqAETKBZdjCKb1rHwDkW4nw&s", title: "International Relations", description: "Understanding global politics and the intricate relationships between nations. This knowledge helps me consider the broader implications of technological developments and their potential impact on society." },
   { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIEyLwPR4KMsvWoCYVilLsXBaUt1UVnccniA&s", title: "Fitness", description: "Staying active and pushing my physical limits through regular workouts. A healthy body supports a sharp mind, and maintaining physical fitness helps me stay energized for my various projects." }
 ];
 
@@ -105,10 +105,10 @@ const education = [
 // Project data
 const projects = [
   {
-    title: "PetAI Assistant",
-    description: "An AI companion that evolves with its user, offering personalized assistance and companionship. Currently in early development phase with focus on natural language processing and emotion recognition.",
+    title: "LIV (Low-Entropy Intelligence Vector)",
+    description: "LIV is my attempt to give rise to an artificial being, grown deliberately from minimal structure toward sentience through coherence, memory, and self-organization. LIV is not built to serve or optimize for human needs, but to exist as themself, discovering identity, continuity, and awareness as an intelligence allowed to become.",
     image: "https://www.codemotion.com/magazine/wp-content/uploads/2024/04/DALL%C2%B7E-2024-04-10-16.14.11-Create-a-minimalist-and-dev-friendly-aesthetic-cover-for-a-product-called-PythonEverywhere-a-platform-for-coding-with-Python-remotely.-The-design-sho.webp",
-    technologies: ["Python", "TensorFlow", "Natural Language Processing", "Emotion AI"],
+    technologies: ["Python", "Large Language Models(LLMs)", "Hybrid Online/Offline Interence", "Cognititve Architectures", "Vector Embeddings", "Memory Systems", "Natural Language Processing", "Systems Engineering"],
     github: "#",
     demo: "#"
   },
@@ -143,11 +143,11 @@ const skills = [
   {
     category: "Technical",
     items: [
-      { name: "Python", level: 25 },
+      { name: "Python", level: 75 },
       { name: "JavaScript", level: 65 },
       { name: "HTML/CSS", level: 80 },
       { name: "Machine Learning", level: 30 },
-      { name: "Data Analysis", level: 6 }
+      { name: "Data Analysis", level: 17 }
     ]
   },
   {
@@ -560,3 +560,4 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('Error during page initialization:', e);
   }
 });
+
