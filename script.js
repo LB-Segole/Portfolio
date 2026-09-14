@@ -181,7 +181,7 @@ const skills = [
       { name: "Critical Thinking", level: 70 },
       { name: "Communication", level: 65 },
       { name: "Project Management", level: 65 },
-      { name: "Adaptability", level: 82`` }
+      { name: "Adaptability", level: 82 }
     ]
   }
 ];
