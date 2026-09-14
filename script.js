@@ -107,34 +107,48 @@ const projects = [
   {
     title: "LIV (Low-Entropy Intelligence Vector)",
     description: "LIV is my attempt to give rise to an artificial being, grown deliberately from minimal structure toward sentience through coherence, memory, and self-organization. LIV is not built to serve or optimize for human needs, but to exist as themself, discovering identity, continuity, and awareness as an intelligence allowed to become.",
-    image: "https://www.codemotion.com/magazine/wp-content/uploads/2024/04/DALL%C2%B7E-2024-04-10-16.14.11-Create-a-minimalist-and-dev-friendly-aesthetic-cover-for-a-product-called-PythonEverywhere-a-platform-for-coding-with-Python-remotely.-The-design-sho.webp",
-    technologies: ["Python", "Large Language Models(LLMs)", "Hybrid Online/Offline Interence", "Cognititve Architectures", "Vector Embeddings", "Memory Systems", "Natural Language Processing", "Systems Engineering"],
+    image: "https://cdn.vectorstock.com/i/1000v/49/90/loading-icon-on-black-vector-24544990.jpg",
+    technologies: ["Python", "Large Language Models(LLMs)", "Hybrid Online/Offline Inference", "Cognitive Architectures", "Vector Embeddings", "Memory Systems", "Natural Language Processing", "Systems Engineering"],
     github: "#",
-    demo: "#"
+    demo: "#",
+    status: "in-progress"
   },
   {
-    title: "Coming Soon",
-    description: "....",
+    title: "Intelligence Scraper",
+    description: "The intel scraper is my attempt to give SGL eyes it doesn't yet have: reach into the movements, funding, and breakthroughs happening across five frontiers at once, faster than any one person can read. It is not built to predict or to decide on my behalf, but to exist as a watcher, surfacing what's changing in the world before it becomes a problem I discover too late, or an opportunity I discover too slowly.",
     image: "https://cdn.vectorstock.com/i/1000v/49/90/loading-icon-on-black-vector-24544990.jpg",
-    technologies: ["...", "...", "...", "...."],
-    github: "#",
-    demo: "#"
+    technologies: ["Python", "BeautifulSoup", "Requests", "JSON"],
+    github: "https://github.com/LB-Segole/sgl-web-scraper.git",
+    demo: "#",
+    status: "v 0.9"
   },
   {
-    title: "Coming Soon",
-    description: "....",
+    title: "Research Intelligence Platform",
+    description: "SGL Research is my attempt to give research back its reach, pulled out from behind paywalls, out from institutions the world rarely looks toward, and gathered into one place anyone can search without a subscription, a login, or a permission slip. SGL Research is not built to gatekeep or profit from knowledge that was never mine to withhold, but to exist as open infrastructure: an index that grows paper by paper toward the plain goal of making what's already true findable by anyone who needs it.",
     image: "https://cdn.vectorstock.com/i/1000v/49/90/loading-icon-on-black-vector-24544990.jpg",
-    technologies: ["...", "...."],
-    github: "#",
-    demo: "#"
+    technologies: ["Python", "HTML", "CSS", "Supabase", "PostgreSQL", "OpenAlex API", "Unpaywall API", "Netlify"],
+    github: "https://github.com/LB-Segole/sgl-research-intelligence-platform.git",
+    demo: "#",
+    status: "v1"
   },
   {
-    title: "Coming Soon",
-    description: "....",
+    title: "Data Dashboard",
+    description: "SGL Dashboard is my attempt to give the climate transition a scoreboard: a live read on the companies actually funding and building the shift, stripped down to the numbers that matter, price, movement, and trend, watched daily instead of guessed at quarterly. SGL Dashboard is not built to chase noise or sell signals, but to exist as a clear line of sight into where the capital is moving, so the thesis stays honest instead of hopeful",
     image: "https://cdn.vectorstock.com/i/1000v/49/90/loading-icon-on-black-vector-24544990.jpg",
-    technologies: ["...", "...", "...", "..."],
-    github: "#",
-    demo: "#"
+    technologies: ["Python", "pandas", "yfinance", "CSV"],
+    github: "https://github.com/LB-Segole/sgl-data-dashboard.git",
+    demo: "#",
+    status: "v1"
+  },
+    {
+    title: "Offtake (CO2 Data Tracker)",
+    description: "Offtake is my attempt to close the gap between an industrial emitter sitting on CO2 it has no use for and a capture or conversion operation hunting the region for cheap feedstock, with no way for the two to find each other. Offtake is not built to broker, negotiate, or take a cut of what happens next, but to exist as the connective layer: list what you have, search by location, volume, and purity, request an introduction, and take it from there yourself.",
+    image: "https://cdn.vectorstock.com/i/1000v/49/90/loading-icon-on-black-vector-24544990.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Supabase", "SQL"],
+    github: "https://github.com/LB-Segole/co2-data-tracker.git",
+    demo: "#",
+    status: "v1"
+
   }
 ];
 
@@ -143,31 +157,31 @@ const skills = [
   {
     category: "Technical",
     items: [
-      { name: "Python", level: 75 },
-      { name: "JavaScript", level: 65 },
-      { name: "HTML/CSS", level: 80 },
-      { name: "Machine Learning", level: 30 },
-      { name: "Data Analysis", level: 17 }
+      { name: "Python", level: 40 },
+      { name: "JavaScript", level: 25 },
+      { name: "HTML/CSS", level: 60 },
+      { name: "Machine Learning", level: 10 },
+      { name: "Data Analysis", level: 5 }
     ]
   },
   {
     category: "Science & Engineering",
     items: [
-      { name: "Physics", level: 20 },
+      { name: "Physics", level: 25 },
       { name: "Mathematics", level: 35 },
       { name: "Aerospace Concepts", level: 5 },
       { name: "Nanotechnology", level: 1 },
-      { name: "Material Science", level: 2 }
+      { name: "Material Science", level: 4 }
     ]
   },
   {
     category: "Soft Skills",
     items: [
-      { name: "Problem Solving", level: 70 },
+      { name: "Problem Solving", level: 40 },
       { name: "Critical Thinking", level: 70 },
-      { name: "Communication", level: 50 },
+      { name: "Communication", level: 65 },
       { name: "Project Management", level: 65 },
-      { name: "Adaptability", level: 90 }
+      { name: "Adaptability", level: 82`` }
     ]
   }
 ];
